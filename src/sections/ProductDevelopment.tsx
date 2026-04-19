@@ -2,7 +2,7 @@ const products = [
   {
     name: 'Waffle Oversized Tee',
     fabric: 'Bamboo-Cotton Blend',
-    image: '/images/5_0946_Waffle_Knit_Oversized_Tee_Crea.png',
+    image: './images/5_0946_Waffle_Knit_Oversized_Tee_Crea.png',
     features: [
       'Oversized drop-shoulder fit',
       'Waffle-knit texture',
@@ -14,7 +14,7 @@ const products = [
   {
     name: 'Tencel Relaxed Shirt',
     fabric: '100% Tencel Lyocell',
-    image: '/images/8_Tencel_Oversized_Shirts_Etsy.png',
+    image: './images/8_Tencel_Oversized_Shirts_Etsy.png',
     features: [
       'Camp collar silhouette',
       'Mother-of-pearl buttons',
@@ -26,7 +26,7 @@ const products = [
   {
     name: 'Soft Utility Pants',
     fabric: 'Tencel-Cotton Twill',
-    image: '/images/6_The_Utility_Pant_in_Buttersoft_Sage.png',
+    image: './images/6_The_Utility_Pant_in_Buttersoft_Sage.png',
     features: [
       'Relaxed tapered fit',
       'Elasticated waistband',
@@ -38,7 +38,7 @@ const products = [
   {
     name: 'Lightweight Overshirt',
     fabric: 'Sorona-Nylon Blend',
-    image: '/images/3_How_to_Style_an_Overshirt_Men_ICON.png',
+    image: './images/3_How_to_Style_an_Overshirt_Men_ICON.png',
     features: [
       'Shirt-jacket hybrid',
       'Concealed snap buttons',
@@ -50,7 +50,7 @@ const products = [
   {
     name: 'Co-ord Lounge Set',
     fabric: 'Bamboo-Viscose Jersey',
-    image: '/images/4_Loungewear_Co_Ords_Co_Ord_Lounge.png',
+    image: './images/4_Loungewear_Co_Ords_Co_Ord_Lounge.png',
     features: [
       'Matching top and bottom',
       'Ribbed cuffs and hem',
@@ -89,7 +89,7 @@ export default function ProductDevelopment() {
         <div className="mt-12 reveal">
           <div className="rounded-xl overflow-hidden">
             <img
-              src="/images/moodboard.jpg"
+              src="./images/moodboard.jpg"
               alt="Earthform Collection Moodboard"
               className="w-full h-[300px] md:h-[400px] object-cover"
             />

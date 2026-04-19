@@ -21,17 +21,17 @@ const brandValues = [
 const fabrics = [
   {
     name: 'Bamboo',
-    image: '/images/5_BAMBOO_Eco_friendly_clothes_made.png',
+    image: './images/5_BAMBOO_Eco_friendly_clothes_made.png',
     desc: 'Naturally antibacterial, incredibly soft, and highly breathable. Requires 1/3 less water than cotton.',
   },
   {
     name: 'Tencel',
-    image: '/images/9_Eco_friendly_fashion_5_bamboo_fabrics.png',
+    image: './images/9_Eco_friendly_fashion_5_bamboo_fabrics.png',
     desc: 'Botanical silk derived from wood pulp. Superior moisture management and a luxurious hand feel.',
   },
   {
     name: 'Sorona',
-    image: '/images/6_Elevate_Your_Wardrobe_with_Bamboo.png',
+    image: './images/6_Elevate_Your_Wardrobe_with_Bamboo.png',
     desc: '37% plant-based polymer offering exceptional stretch recovery and permanent wrinkle resistance.',
   },
 ];

@@ -79,7 +79,7 @@ export default function Hero() {
           <div className="flex-1 w-full hero-image-print">
             <div className="rounded-xl overflow-hidden shadow-[0_20px_60px_rgba(0,0,0,0.08)]">
               <img
-                src="/images/hero.jpg"
+                src="./images/hero.jpg"
                 alt="Carbon Tree fashion editorial — model in oversized cream knit sweater"
                 className="w-full h-auto object-cover max-h-[70vh]"
               />
