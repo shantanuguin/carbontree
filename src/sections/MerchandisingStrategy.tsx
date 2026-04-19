@@ -1,28 +1,58 @@
 import { Users, Layout, Globe } from 'lucide-react';
 
 const pricingData = [
-  { product: 'Waffle Oversized Tee', cost: 'Rs. 280', markup: '3.2x', mrp: 'Rs. 899', pos: 'Entry Core' },
-  { product: 'Tencel Relaxed Shirt', cost: 'Rs. 520', markup: '3.5x', mrp: 'Rs. 1,799', pos: 'Premium Core' },
-  { product: 'Soft Utility Pants', cost: 'Rs. 450', markup: '3.1x', mrp: 'Rs. 1,399', pos: 'Volume Driver' },
-  { product: 'Lightweight Overshirt', cost: 'Rs. 580', markup: '3.4x', mrp: 'Rs. 1,999', pos: 'Seasonal Premium' },
-  { product: 'Co-ord Lounge Set', cost: 'Rs. 620', markup: '3.0x', mrp: 'Rs. 1,899', pos: 'Bundle Value' },
+  {
+    product: 'Waffle Oversized Tee',
+    cost: 'Rs. 420',
+    markup: '3.3x',
+    mrp: 'Rs. 1,399',
+    pos: 'Entry Core (High Volume)',
+  },
+  {
+    product: 'Tencel Relaxed Shirt',
+    cost: 'Rs. 780',
+    markup: '3.6x',
+    mrp: 'Rs. 2,799',
+    pos: 'Premium Core (Style Driver)',
+  },
+  {
+    product: 'Soft Utility Pants',
+    cost: 'Rs. 850',
+    markup: '3.4x',
+    mrp: 'Rs. 2,899',
+    pos: 'Volume Driver (Essentials)',
+  },
+  {
+    product: 'Lightweight Overshirt',
+    cost: 'Rs. 950',
+    markup: '3.6x',
+    mrp: 'Rs. 3,399',
+    pos: 'Seasonal Hero (High Margin)',
+  },
+  {
+    product: 'Co-ord Lounge Set',
+    cost: 'Rs. 1,150',
+    markup: '3.3x',
+    mrp: 'Rs. 3,799',
+    pos: 'Average Order Value (AOV) Booster',
+  },
 ];
 
 const postLaunchCards = [
   {
     icon: Users,
     title: 'Influencer Marketing',
-    text: "Partner with 8-10 micro-influencers (10K-50K followers) in the sustainable lifestyle space. Focus on authenticity — long-term ambassadorships over one-off posts. Provide seeding kits with full product story cards.",
+    text: 'Partner with 8-10 micro-influencers (10K-50K followers) in the sustainable lifestyle space. Focus on "Fabric First" storytelling — showing the drape and texture of Tencel and Bamboo in natural light.',
   },
   {
     icon: Layout,
     title: 'Visual Merchandising',
-    text: "In-store: Create 'Touch & Feel' zones with fabric swatch displays. Online: 360-degree product views with fabric close-up hotspots. Use neutral linen backdrops to reinforce brand aesthetic.",
+    text: "Digital: High-fidelity macro fabric shots on PDPs. Physical: 'Fabric Lab' concept pop-ups in Tier-1 cities (Delhi, Mumbai, Bangalore) where customers can feel swatches and see the Sorona stretch recovery.",
   },
   {
     icon: Globe,
-    title: 'Digital Strategy',
-    text: "Email: Segmented campaigns targeting fabric enthusiasts. Social: Weekly 'Fabric Friday' educational content. Retargeting: Dynamic ads showcasing products based on browsing behavior.",
+    title: 'Performance Marketing',
+    text: 'Retargeting based on "Material Interest" — if a user views Bamboo, serve ads highlighting its antibacterial properties. Meta/Google ads focused on "Better Basics" as the core value prop.',
   },
 ];
 
@@ -40,17 +70,17 @@ export default function MerchandisingStrategy() {
 
         {/* A. Pricing Strategy */}
         <div className="mt-16 reveal">
-          <h3 className="text-2xl font-semibold text-black mb-8">Pricing Strategy</h3>
+          <h3 className="text-2xl font-semibold text-black mb-8">Pricing Strategy & Margin Analysis</h3>
           <div className="bg-white rounded-xl overflow-hidden border border-[#e5e5e5] print-avoid-break">
             <div className="overflow-x-auto">
               <table className="w-full text-sm">
                 <thead>
                   <tr className="bg-black text-white">
-                    <th className="text-left px-4 py-3 text-xs uppercase font-medium">Product</th>
-                    <th className="text-left px-4 py-3 text-xs uppercase font-medium">Fabric Cost</th>
-                    <th className="text-left px-4 py-3 text-xs uppercase font-medium">Markup</th>
-                    <th className="text-left px-4 py-3 text-xs uppercase font-medium">MRP (INR)</th>
-                    <th className="text-left px-4 py-3 text-xs uppercase font-medium">Positioning</th>
+                    <th className="text-left px-4 py-3 text-xs uppercase font-medium">Product Name</th>
+                    <th className="text-left px-4 py-3 text-xs uppercase font-medium">Cost of Goods (BOM)</th>
+                    <th className="text-left px-4 py-3 text-xs uppercase font-medium">Planned Markup</th>
+                    <th className="text-left px-4 py-3 text-xs uppercase font-medium">Final MRP (INR)</th>
+                    <th className="text-left px-4 py-3 text-xs uppercase font-medium">Strategic Positioning</th>
                   </tr>
                 </thead>
                 <tbody>
@@ -62,7 +92,7 @@ export default function MerchandisingStrategy() {
                       <td className="px-4 py-3.5 font-medium text-black">{row.product}</td>
                       <td className="px-4 py-3.5 text-[#6b6b6b]">{row.cost}</td>
                       <td className="px-4 py-3.5 text-[#6b6b6b]">{row.markup}</td>
-                      <td className="px-4 py-3.5 font-medium text-[#8a9b5b]">{row.mrp}</td>
+                      <td className="px-4 py-3.5 font-semibold text-[#8a9b5b]">{row.mrp}</td>
                       <td className="px-4 py-3.5 text-[#6b6b6b]">{row.pos}</td>
                     </tr>
                   ))}
@@ -70,35 +100,61 @@ export default function MerchandisingStrategy() {
               </table>
             </div>
           </div>
+          <p className="mt-4 text-xs text-[#6b6b6b] italic">
+            *BOM includes Fabric, CMT, Trims, and Tier-1 Logistics. Targeted average Gross Margin: 65-70%.
+          </p>
         </div>
 
         {/* B. Sales Logic */}
         <div className="mt-16 reveal">
-          <h3 className="text-2xl font-semibold text-black mb-8">Sales Logic & Assortment Planning</h3>
+          <h3 className="text-2xl font-semibold text-black mb-8">Inventory Management & Assortment Planning</h3>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             <div className="bg-white rounded-xl p-8 print-avoid-break">
-              <h4 className="text-lg font-semibold text-black mb-4">Sell-Through Strategy</h4>
-              <div className="space-y-3 text-sm text-[#6b6b6b] leading-relaxed">
-                <p><strong className="text-black">Week 1-2 (Launch):</strong> Focus on Waffle Tee and Co-ord Set as entry points. Drive traffic through influencer seeding.</p>
-                <p><strong className="text-black">Week 3-4 (Conversion):</strong> Push Tencel Shirt as the premium upgrade. Highlight fabric story through content.</p>
-                <p><strong className="text-black">Week 5-6 (Retention):</strong> Introduce Overshirt as the seasonal layer. Bundle with Utility Pants for full looks.</p>
-                <p><strong className="text-black">Week 7-8 (Replenishment):</strong> Re-stock top 2 SKUs based on sell-through data. Discontinue slowest mover.</p>
+              <h4 className="text-lg font-semibold text-black mb-4">Launch & Velocity Strategy</h4>
+              <div className="space-y-4 text-sm text-[#6b6b6b] leading-relaxed">
+                <p>
+                  <strong className="text-black">Drop Strategy:</strong> Hybrid model with 60% Core
+                  (Always-in-stock) and 40% Seasonal drops to maintain freshness.
+                </p>
+                <div className="space-y-3">
+                  <p>
+                    <strong className="text-black">Phase 1 (Awareness):</strong> Use Waffle Tee as
+                    "First Purchase" driver. Target CAC (Customer Acquisition Cost) &lt; Rs. 400.
+                  </p>
+                  <p>
+                    <strong className="text-black">Phase 2 (Retention):</strong> Bundle Utility Pants
+                    with Tencel Shirts for a 15% "Set Discount" to drive AOV.
+                  </p>
+                  <p>
+                    <strong className="text-black">Inventory Turn:</strong> Target 4-5 turns per
+                    annum. Maintain 8 weeks of cover for Core SKUs.
+                  </p>
+                </div>
               </div>
             </div>
             <div className="bg-white rounded-xl p-8 print-avoid-break">
-              <h4 className="text-lg font-semibold text-black mb-4">Restock vs. Discontinue Logic</h4>
+              <h4 className="text-lg font-semibold text-black mb-4">Stock Management Logic</h4>
               <div className="space-y-4 text-sm text-[#6b6b6b] leading-relaxed">
                 <div className="pl-4 border-l-[3px] border-[#8a9b5b]">
-                  <p className="font-medium text-[#8a9b5b] mb-1">RESTOCK Criteria</p>
-                  <p>&gt;70% sell-through in 4 weeks. Strong social engagement. Repeat customer demand.</p>
+                  <p className="font-medium text-[#8a9b5b] mb-1">REPLENISHMENT (Chase Strategy)</p>
+                  <p>
+                    Triggered at &gt;25% sell-through in first 14 days. Lead time for Tencel fabrics is
+                    high (45 days), requiring proactive Greige stock holding.
+                  </p>
                 </div>
                 <div className="pl-4 border-l-[3px] border-[#6b6b6b]">
-                  <p className="font-medium text-[#6b6b6b] mb-1">DISCONTINUE Criteria</p>
-                  <p>&lt;30% sell-through in 6 weeks. Negative return rate &gt;15%. Poor colorway performance.</p>
+                  <p className="font-medium text-[#6b6b6b] mb-1">DISCONTINUE (Phase Out)</p>
+                  <p>
+                    &lt;15% sell-through in 30 days. Action: Liquidate via bundle offers or
+                    third-party marketplaces (Ajio Luxe/Nykaa Man) to protect brand equity.
+                  </p>
                 </div>
                 <div className="pl-4 border-l-[3px] border-[#e5e5e5]">
-                  <p className="font-medium text-black mb-1">CLEARANCE</p>
-                  <p>Markdown at 30% after Week 8 for discontinued SKUs. Channel to outlet partners.</p>
+                  <p className="font-medium text-black mb-1">MARGIN PROTECTION</p>
+                  <p>
+                    No flat site-wide sales. Use "Last Chance" sections for slow movers to maintain
+                    perceived brand value.
+                  </p>
                 </div>
               </div>
             </div>

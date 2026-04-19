@@ -1,73 +1,56 @@
-# React + TypeScript + Vite
+# Carbon Tree — Merchandising Strategy Assignment
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A comprehensive merchandising strategy and product development analysis for **Carbon Tree**, a conscious fashion brand rooted in fabric innovation.
 
-Currently, two official plugins are available:
+## Project Overview
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+This project was developed as an assignment for the **Assistant Merchandiser** role. It covers:
 
-## React Compiler
+1.  **Trend Research & Application**: Analysis of current fashion trends (Textured Minimalism, Soft Utility, Relaxed Tailoring) and their adaptation for Carbon Tree.
+2.  **Product Development**: Conceptualization of the "Earthform" mini-drop, featuring sustainable fabrics like Bamboo, Tencel, and Sorona.
+3.  **Merchandising & Sales Perspective**: Detailed pricing strategies, sales logic, and post-launch marketing plans.
+4.  **Competitive & Market Awareness**: Comparative analysis against key competitors (Uniqlo, Zara, H&M, COS, etc.) with data-driven visualizations.
+5.  **Key Insights & Recommendations**: Strategic SWOT analysis and actionable growth recommendations.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## Tech Stack
 
-## Expanding the ESLint configuration
+-   **Framework**: React 18 + Vite
+-   **Styling**: Tailwind CSS
+-   **Charts**: Chart.js + react-chartjs-2
+-   **Icons**: Lucide React
+-   **Animations**: Custom CSS Scroll Reveal
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+## How to Run Locally
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+1.  **Clone the repository**:
+    ```bash
+    git clone https://github.com/shantanuguin/carbontree.git
+    cd carbontree
+    ```
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+2.  **Install dependencies**:
+    ```bash
+    npm install
+    ```
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+3.  **Start the development server**:
+    ```bash
+    npm run dev
+    ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+4.  **Build for production**:
+    ```bash
+    npm run build
+    ```
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+## Printing the Strategy
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+The website is optimized for **A4 Portrait PDF** printing. To generate a professional PDF:
+1.  Click the **"Print PDF"** button on the Hero section or the floating print icon.
+2.  In the browser print dialog, select **"Save as PDF"**.
+3.  Ensure **"Background Graphics"** is enabled in the print settings for the best visual result.
+
+---
+**Student**: Shantanu Guin  
+**Roll**: BFT/22/107  
+**Role**: Assistant Merchandiser
