@@ -25,6 +25,8 @@ export default function Hero() {
               Carbon Tree
               <br />
               <span className="text-[#8a9b5b] italic">Merchandising Strategy</span>
+              <br />
+              <span className="text-4xl md:text-5xl lg:text-6xl text-[#6b6b6b] block mt-4">Assignment</span>
             </h1>
 
             <p className="mt-6 text-lg text-[#6b6b6b] leading-relaxed max-w-[520px]" style={{ fontFamily: 'Inter, sans-serif' }}>
