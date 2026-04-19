@@ -45,7 +45,7 @@ const barData = {
   datasets: [
     {
       label: 'Avg Price (INR)',
-      data: [2899, 5149, 2849, 16500, 4749, 3749, 11999, 1449],
+      data: [2899, 5149, 2849, 16500, 4749, 3749, 11999, 2859],
       backgroundColor: ['#e5e5e5', '#e5e5e5', '#e5e5e5', '#e5e5e5', '#e5e5e5', '#e5e5e5', '#e5e5e5', '#8a9b5b'],
       borderRadius: 6,
       barThickness: 32,
@@ -154,7 +154,7 @@ const bubbleBrands = [
   { label: 'Jaywalking',   data: [{ x: 55, y: 75, r: 10 }] },
   { label: 'Nicobar',      data: [{ x: 50, y: 55, r: 10 }] },
   { label: 'COS',          data: [{ x: 90, y: 55, r: 11 }] },
-  { label: 'Carbon Tree',  data: [{ x: 35, y: 90, r: 16 }] },
+  { label: 'Carbon Tree',  data: [{ x: 45, y: 90, r: 16 }] },
 ];
 
 const bubbleData = {
@@ -253,7 +253,7 @@ export default function CompetitiveAnalysis() {
                   {/* Carbon Tree row */}
                   <tr className="bg-[rgba(138,155,91,0.08)] border-l-[3px] border-[#8a9b5b]">
                     <td className="px-3 py-3 font-bold text-[#8a9b5b]">Carbon Tree</td>
-                    <td className="px-3 py-3 font-medium text-[#8a9b5b]">Rs. 899-1,999</td>
+                    <td className="px-3 py-3 font-medium text-[#8a9b5b]">Rs. 1,399-3,799</td>
                     <td className="px-3 py-3 font-medium text-[#8a9b5b]">Bamboo, Tencel, Sorona</td>
                     <td className="px-3 py-3 font-medium text-[#8a9b5b]">Very High</td>
                     <td className="px-3 py-3 font-medium text-[#8a9b5b]">Low-Medium</td>
