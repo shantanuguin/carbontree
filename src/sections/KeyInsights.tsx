@@ -72,7 +72,7 @@ const recommendations = [
 
 export default function KeyInsights() {
   return (
-    <section id="insights" className="bg-[#f5f5f5] py-20 lg:py-28 print-section-padding print-page-break">
+    <section id="insights" className="bg-[#f7f5f0] py-20 lg:py-28 print-section-padding print-page-break">
       <div className="section-container">
         {/* Header */}
         <div className="text-center max-w-[640px] mx-auto reveal">

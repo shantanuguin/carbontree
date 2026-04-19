@@ -120,7 +120,7 @@ export default function ProductDevelopment() {
           {products.map((product, i) => (
             <div
               key={product.name}
-              className={`bg-[#f5f5f5] rounded-xl overflow-hidden reveal reveal-delay-${i + 1}`}
+              className={`bg-[#f7f5f0] rounded-xl overflow-hidden reveal reveal-delay-${i + 1}`}
             >
               <div className="h-60 overflow-hidden">
                 <img
@@ -152,7 +152,7 @@ export default function ProductDevelopment() {
         <div className="mt-16 reveal">
           <h3 className="text-2xl font-semibold text-black mb-6">Why This Drop Would Sell</h3>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-            <div className="bg-[#f5f5f5] rounded-xl p-6 print-avoid-break">
+            <div className="bg-[#f7f5f0] rounded-xl p-6 print-avoid-break">
               <h4 className="text-base font-semibold text-black mb-2">Fabric Differentiation</h4>
               <p className="text-sm text-[#6b6b6b] leading-relaxed">
                 No Indian D2C brand at this price point leads with Bamboo, Tencel, and Sorona.
@@ -160,7 +160,7 @@ export default function ProductDevelopment() {
                 innovation — consumers feel and remember the difference.
               </p>
             </div>
-            <div className="bg-[#f5f5f5] rounded-xl p-6 print-avoid-break">
+            <div className="bg-[#f7f5f0] rounded-xl p-6 print-avoid-break">
               <h4 className="text-base font-semibold text-black mb-2">Trend-Aligned Versatility</h4>
               <p className="text-sm text-[#6b6b6b] leading-relaxed">
                 Every piece directly serves the three macro trends identified — textured
@@ -168,14 +168,14 @@ export default function ProductDevelopment() {
                 trend-chasing; it is trend-meeting through fabric.
               </p>
             </div>
-            <div className="bg-[#f5f5f5] rounded-xl p-6 print-avoid-break">
+            <div className="bg-[#f7f5f0] rounded-xl p-6 print-avoid-break">
               <h4 className="text-base font-semibold text-black mb-2">Premium Conscious Pricing</h4>
               <p className="text-sm text-[#6b6b6b] leading-relaxed">
                 Priced at Rs. 1,399–3,799, the collection sits in a strategic sweet spot — premium
                 enough to signal quality and innovation, yet more accessible than Rs. 5,000+ conscious luxury brands.
               </p>
             </div>
-            <div className="bg-[#f5f5f5] rounded-xl p-6 print-avoid-break">
+            <div className="bg-[#f7f5f0] rounded-xl p-6 print-avoid-break">
               <h4 className="text-base font-semibold text-black mb-2">Built-in Repeat Purchase</h4>
               <p className="text-sm text-[#6b6b6b] leading-relaxed">
                 The Co-ord Set and Waffle Tee serve as entry-level hooks, while the Tencel

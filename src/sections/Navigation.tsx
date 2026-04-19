@@ -53,8 +53,8 @@ export default function Navigation() {
       <nav
         className={`fixed top-0 left-0 right-0 z-50 h-16 flex items-center transition-all duration-300 no-print ${
           scrolled
-            ? 'bg-white/90 backdrop-blur-xl border-b border-[#e5e5e5] shadow-sm'
-            : 'bg-white/80 backdrop-blur-md'
+            ? 'bg-white/90 backdrop-blur-xl border-b border-[#e8e4de] shadow-sm'
+            : 'bg-[#f7f5f0]/80 backdrop-blur-md'
         }`}
       >
         <div className="section-container flex items-center justify-between w-full">
@@ -64,9 +64,16 @@ export default function Navigation() {
               e.preventDefault();
               window.scrollTo({ top: 0, behavior: 'smooth' });
             }}
-            className="text-base font-bold tracking-[0.05em] text-black"
+            className="flex items-center gap-2"
           >
-            CARBON TREE
+            {/* Leaf icon mark */}
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" className="text-[#8a9b5b]">
+              <path d="M12 2C6.5 2 2 6.5 2 12c0 3.5 1.8 6.5 4.5 8.3C7.5 17 9.5 14 12 12c2.5 2 4.5 5 5.5 8.3C20.2 18.5 22 15.5 22 12 22 6.5 17.5 2 12 2z" fill="currentColor" opacity="0.2"/>
+              <path d="M12 2v20M7 8c1.5 1.5 3.5 2.5 5 4M17 8c-1.5 1.5-3.5 2.5-5 4" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round"/>
+            </svg>
+            <span className="text-base font-bold tracking-[0.08em] text-black" style={{ fontFamily: 'Inter, sans-serif' }}>
+              CARBON TREE
+            </span>
           </a>
 
           {/* Desktop Nav */}
@@ -79,8 +86,9 @@ export default function Navigation() {
                 className={`text-sm font-medium transition-colors duration-200 pb-1 border-b-2 ${
                   activeSection === link.href.slice(1)
                     ? 'text-[#8a9b5b] border-[#8a9b5b]'
-                    : 'text-[#6b6b6b] border-transparent hover:text-black hover:border-[#e5e5e5]'
+                    : 'text-[#6b6b6b] border-transparent hover:text-black hover:border-[#e8e4de]'
                 }`}
+                style={{ fontFamily: 'Inter, sans-serif' }}
               >
                 {link.label}
               </a>
@@ -100,13 +108,14 @@ export default function Navigation() {
 
       {/* Mobile overlay */}
       {mobileOpen && (
-        <div className="fixed inset-0 z-40 bg-white flex flex-col items-center justify-center gap-8 md:hidden no-print">
+        <div className="fixed inset-0 z-40 bg-[#f7f5f0] flex flex-col items-center justify-center gap-8 md:hidden no-print">
           {navLinks.map((link) => (
             <a
               key={link.href}
               href={link.href}
               onClick={(e) => handleClick(e, link.href)}
-              className="text-2xl font-medium text-black"
+              className="text-2xl text-black"
+              style={{ fontFamily: "'DM Serif Display', Georgia, serif" }}
             >
               {link.label}
             </a>

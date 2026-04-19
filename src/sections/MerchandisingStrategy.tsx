@@ -58,7 +58,7 @@ const postLaunchCards = [
 
 export default function MerchandisingStrategy() {
   return (
-    <section id="strategy" className="bg-[#f5f5f5] py-20 lg:py-28 print-section-padding print-page-break">
+    <section id="strategy" className="bg-[#f7f5f0] py-20 lg:py-28 print-section-padding print-page-break">
       <div className="section-container">
         {/* Header */}
         <div className="text-center max-w-[640px] mx-auto reveal">
@@ -87,7 +87,7 @@ export default function MerchandisingStrategy() {
                   {pricingData.map((row, i) => (
                     <tr
                       key={row.product}
-                      className={`${i % 2 === 0 ? 'bg-white' : 'bg-[#f5f5f5]'} hover:bg-[#f0f0f0] transition-colors`}
+                      className={`${i % 2 === 0 ? 'bg-white' : 'bg-[#f7f5f0]'} hover:bg-[#f0f0f0] transition-colors`}
                     >
                       <td className="px-4 py-3.5 font-medium text-black">{row.product}</td>
                       <td className="px-4 py-3.5 text-[#6b6b6b]">{row.cost}</td>

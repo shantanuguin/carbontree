@@ -38,7 +38,7 @@ const fabrics = [
 
 export default function BrandOverview() {
   return (
-    <section id="brand" className="bg-white py-20 lg:py-28 print-section-padding print-page-break">
+    <section id="brand" className="py-20 lg:py-28 print-section-padding print-page-break" style={{ background: 'linear-gradient(180deg, #ffffff 0%, #f7f5f0 100%)' }}>
       <div className="section-container">
         {/* Header */}
         <div className="text-center max-w-[640px] mx-auto reveal">
@@ -70,7 +70,7 @@ export default function BrandOverview() {
         {/* Fabric Focus */}
         <div className="mt-16 grid grid-cols-1 md:grid-cols-3 gap-6">
           {fabrics.map((fabric, i) => (
-            <div key={fabric.name} className={`reveal reveal-delay-${i + 1}`}>
+            <div key={fabric.name} className={`reveal reveal-delay-${i + 1} bg-[#f2ede6] rounded-xl p-6`}>
               <div className="rounded-lg overflow-hidden h-40">
                 <img
                   src={fabric.image}

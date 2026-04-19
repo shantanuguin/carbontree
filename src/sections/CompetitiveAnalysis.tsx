@@ -240,7 +240,7 @@ export default function CompetitiveAnalysis() {
                   {competitors.map((c, i) => (
                     <tr
                       key={c.brand}
-                      className={`${i % 2 === 0 ? 'bg-white' : 'bg-[#f5f5f5]'} hover:bg-[#f0f0f0] transition-colors`}
+                      className={`${i % 2 === 0 ? 'bg-white' : 'bg-[#f7f5f0]'} hover:bg-[#f0f0f0] transition-colors`}
                     >
                       <td className="px-3 py-3 font-medium text-black">{c.brand}</td>
                       <td className="px-3 py-3 text-[#6b6b6b]">{c.price}</td>
@@ -300,7 +300,7 @@ export default function CompetitiveAnalysis() {
         <div className="mt-16 reveal">
           <h3 className="text-2xl font-semibold text-black mb-8">Key Learnings for Carbon Tree</h3>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-            <div className="bg-[#f5f5f5] rounded-xl p-6 md:p-8 print-avoid-break">
+            <div className="bg-[#f7f5f0] rounded-xl p-6 md:p-8 print-avoid-break">
               <h4 className="text-lg font-semibold text-black mb-3">What Competitors Do Well</h4>
               <div className="space-y-3 text-sm text-[#6b6b6b] leading-relaxed">
                 <p><strong className="text-black">Uniqlo</strong> — Exceptional at fabric storytelling (HeatTech, AIRism) and scaling essentials globally. Their "LifeWear" narrative makes basics feel intentional.</p>
@@ -308,7 +308,7 @@ export default function CompetitiveAnalysis() {
                 <p><strong className="text-black">Nicobar</strong> — Successfully blends Indian identity with contemporary design. Strong visual merchandising and lifestyle branding.</p>
               </div>
             </div>
-            <div className="bg-[#f5f5f5] rounded-xl p-6 md:p-8 print-avoid-break">
+            <div className="bg-[#f7f5f0] rounded-xl p-6 md:p-8 print-avoid-break">
               <h4 className="text-lg font-semibold text-black mb-3">What Carbon Tree Can Do Differently</h4>
               <div className="space-y-3 text-sm text-[#6b6b6b] leading-relaxed">
                 <p><strong className="text-black">Own the fabric narrative</strong> — No competitor at Carbon Tree's price point leads with material innovation as the core brand story. This is an unoccupied niche.</p>

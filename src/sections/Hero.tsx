@@ -12,8 +12,8 @@ export default function Hero() {
   return (
     <section
       ref={sectionRef}
-      className="min-h-screen bg-white flex items-center pt-16 print-visible"
-      style={{ opacity: 0 }}
+      className="min-h-screen flex items-center pt-16 print-visible"
+      style={{ opacity: 0, background: 'linear-gradient(180deg, #f7f5f0 0%, #ffffff 100%)' }}
     >
       <div className="section-container w-full py-12 md:py-0">
         <div className="flex flex-col lg:flex-row items-center gap-12 lg:gap-16">
@@ -21,20 +21,27 @@ export default function Hero() {
           <div className="flex-1 max-w-xl">
             <p className="eyebrow mb-6">NIFT NEW DELHI — 2026</p>
 
-            <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold leading-[1.1] tracking-[-0.02em] text-black">
+            <h1 className="text-5xl md:text-6xl lg:text-7xl leading-[1.1] tracking-[-0.02em] text-black">
               Carbon Tree
               <br />
-              <span className="text-[#8a9b5b]">Merchandising Strategy</span>
+              <span className="text-[#8a9b5b] italic">Merchandising Strategy</span>
             </h1>
 
-            <p className="mt-6 text-lg text-[#6b6b6b] leading-relaxed max-w-[520px]">
+            <p className="mt-6 text-lg text-[#6b6b6b] leading-relaxed max-w-[520px]" style={{ fontFamily: 'Inter, sans-serif' }}>
               Carbon Tree is a conscious fashion brand rooted in fabric innovation —
               crafting everyday essentials from Bamboo, Tencel, and Sorona. Designed for
               the modern, mindful consumer who values comfort, quality, and environmental
               responsibility without compromising on style.
             </p>
 
-            <div className="mt-10 flex flex-wrap gap-4 text-sm font-medium text-black">
+            {/* Decorative leaf accent */}
+            <div className="mt-8 flex items-center gap-3">
+              <div className="w-8 h-[1px] bg-[#8a9b5b]" />
+              <span className="text-xs tracking-[0.15em] uppercase text-[#8a9b5b]">Fabric-Led Fashion</span>
+              <div className="flex-1 h-[1px] bg-[#e8e4de]" />
+            </div>
+
+            <div className="mt-6 flex flex-wrap gap-4 text-sm font-medium text-black" style={{ fontFamily: 'Inter, sans-serif' }}>
               <span>Student: Shantanu Guin</span>
               <span className="hidden sm:inline text-[#e5e5e5]">|</span>
               <span>Roll: BFT/22/107</span>
@@ -52,12 +59,14 @@ export default function Hero() {
                     ?.scrollIntoView({ behavior: 'smooth', block: 'start' });
                 }}
                 className="inline-block bg-[#8a9b5b] text-white text-sm font-medium px-7 py-3.5 rounded-lg hover:bg-[#7a8b4b] transition-colors duration-200"
+                style={{ fontFamily: 'Inter, sans-serif' }}
               >
                 View Assignment
               </a>
               <button
                 onClick={() => window.print()}
-                className="inline-block bg-transparent border border-[#e5e5e5] text-black text-sm font-medium px-7 py-3.5 rounded-lg hover:bg-[#f5f5f5] transition-colors duration-200"
+                className="inline-block bg-transparent border border-[#e5e5e5] text-black text-sm font-medium px-7 py-3.5 rounded-lg hover:bg-[#f7f5f0] transition-colors duration-200"
+                style={{ fontFamily: 'Inter, sans-serif' }}
               >
                 Print PDF
               </button>

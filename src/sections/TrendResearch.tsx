@@ -48,7 +48,7 @@ const trends = [
 
 export default function TrendResearch() {
   return (
-    <section id="trends" className="bg-[#f5f5f5] py-20 lg:py-28 print-section-padding print-page-break">
+    <section id="trends" className="bg-[#f7f5f0] py-20 lg:py-28 print-section-padding print-page-break">
       <div className="section-container">
         {/* Header */}
         <div className="text-center max-w-[640px] mx-auto reveal">
@@ -76,7 +76,7 @@ export default function TrendResearch() {
               >
                 {/* Text */}
                 <div className="flex-1 lg:max-w-[45%]">
-                  <span className="inline-block text-[11px] uppercase bg-[#f5f5f5] px-3 py-1 rounded font-medium text-[#6b6b6b]">
+                  <span className="inline-block text-[11px] uppercase bg-[#f7f5f0] px-3 py-1 rounded font-medium text-[#6b6b6b]">
                     {trend.tag}
                   </span>
                   <h3 className="mt-4 text-2xl md:text-[28px] font-semibold text-black">

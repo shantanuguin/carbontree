@@ -24,6 +24,10 @@
     --input: 0 0% 90%;
     --ring: 78 24% 49%;
     --radius: 0.75rem;
+    --ct-olive: #8a9b5b;
+    --ct-olive-dark: #6b7a42;
+    --ct-sand: #f7f5f0;
+    --ct-warm-grey: #e8e4de;
   }
 
   html {
@@ -35,6 +39,11 @@
     @apply bg-white text-black antialiased;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+  }
+
+  h1, h2, h3, blockquote {
+    font-family: 'DM Serif Display', Georgia, 'Times New Roman', serif;
+    font-weight: 400;
   }
 
   * {
@@ -52,7 +61,7 @@
   }
 
   .card-base {
-    @apply bg-[#f5f5f5] rounded-xl p-8;
+    @apply bg-[#f7f5f0] rounded-xl p-8;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
     transition: transform 0.25s ease, box-shadow 0.25s ease;
   }
