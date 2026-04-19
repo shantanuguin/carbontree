@@ -313,7 +313,7 @@ export default function CompetitiveAnalysis() {
               <div className="space-y-3 text-sm text-[#6b6b6b] leading-relaxed">
                 <p><strong className="text-black">Own the fabric narrative</strong> — No competitor at Carbon Tree's price point leads with material innovation as the core brand story. This is an unoccupied niche.</p>
                 <p><strong className="text-black">Educate, don't just sell</strong> — Create content around why Bamboo outperforms cotton, how Tencel is made, and what makes Sorona stretch better. Turn product pages into learning experiences.</p>
-                <p><strong className="text-black">Price as a moat</strong> — At Rs. 899–1,999, Carbon Tree can capture the massive gap between Uniqlo's commodity basics and COS's premium positioning — serving the conscious but price-aware Indian consumer.</p>
+                <p><strong className="text-black">Price as a moat</strong> — At Rs. 1,399–3,799, Carbon Tree can capture the gap between Uniqlo's core basics and Nicobar's premium positioning — serving the conscious but quality-aware Indian consumer.</p>
               </div>
             </div>
           </div>

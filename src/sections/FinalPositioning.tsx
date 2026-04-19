@@ -9,7 +9,7 @@ export default function FinalPositioning() {
           {/* Quote */}
           <blockquote className="text-xl md:text-[28px] font-normal text-black leading-relaxed italic">
             "Carbon Tree is the fabric-led sustainable essentials brand for the conscious
-            Indian consumer — offering premium material innovation at accessible prices, one
+            Indian consumer — offering premium material innovation at an approachable premium, one
             thoughtful layer at a time."
           </blockquote>
 

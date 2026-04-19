@@ -169,11 +169,10 @@ export default function ProductDevelopment() {
               </p>
             </div>
             <div className="bg-[#f5f5f5] rounded-xl p-6 print-avoid-break">
-              <h4 className="text-base font-semibold text-black mb-2">Accessible Conscious Pricing</h4>
+              <h4 className="text-base font-semibold text-black mb-2">Premium Conscious Pricing</h4>
               <p className="text-sm text-[#6b6b6b] leading-relaxed">
-                Priced at Rs. 899–1,999, the collection sits in the sweet spot — premium
-                enough to signal quality, accessible enough to capture the growing
-                sustainability-curious consumer who is not yet ready for Rs. 5,000+ conscious brands.
+                Priced at Rs. 1,399–3,799, the collection sits in a strategic sweet spot — premium
+                enough to signal quality and innovation, yet more accessible than Rs. 5,000+ conscious luxury brands.
               </p>
             </div>
             <div className="bg-[#f5f5f5] rounded-xl p-6 print-avoid-break">
