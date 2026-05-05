@@ -1,4 +1,7 @@
+import { useEffect, useRef } from 'react';
 import { Shield, AlertTriangle, TrendingUp, ShieldAlert } from 'lucide-react';
+import gsap from 'gsap';
+import SplitType from 'split-type';
 
 const swotData = [
   {
@@ -71,13 +74,39 @@ const recommendations = [
 ];
 
 export default function KeyInsights() {
+  const eyebrowRef = useRef<HTMLParagraphElement>(null);
+  const titleRef = useRef<HTMLHeadingElement>(null);
+  const recommendationsTitleRef = useRef<HTMLHeadingElement>(null);
+
+  useEffect(() => {
+    const splitElements = [
+      eyebrowRef.current,
+      titleRef.current,
+      recommendationsTitleRef.current,
+    ].filter(Boolean);
+
+    splitElements.forEach((el) => {
+      if (el) {
+        const split = new SplitType(el, { types: 'chars' });
+        gsap.from(split.chars, {
+          opacity: 0,
+          y: 40,
+          rotateX: -90,
+          stagger: 0.02,
+          duration: 0.8,
+          ease: 'back.out(1.7)',
+        });
+      }
+    });
+  }, []);
+
   return (
     <section id="insights" className="bg-[#f7f5f0] py-20 lg:py-28 print-section-padding print-page-break">
       <div className="section-container">
         {/* Header */}
         <div className="text-center max-w-[640px] mx-auto reveal">
-          <p className="eyebrow">06 — KEY INSIGHTS</p>
-          <h2 className="mt-3 text-3xl md:text-4xl font-semibold text-black tracking-[-0.02em]">
+          <p ref={eyebrowRef} className="eyebrow">06 — KEY INSIGHTS</p>
+          <h2 ref={titleRef} className="mt-3 text-3xl md:text-4xl font-semibold text-black tracking-[-0.02em]">
             SWOT Analysis & Strategic Recommendations
           </h2>
         </div>
@@ -105,7 +134,7 @@ export default function KeyInsights() {
 
         {/* Recommendations */}
         <div className="mt-16 reveal">
-          <h3 className="text-2xl font-semibold text-black mb-8">Strategic Recommendations</h3>
+          <h3 ref={recommendationsTitleRef} className="text-2xl font-semibold text-black mb-8">Strategic Recommendations</h3>
           <div className="space-y-4">
             {recommendations.map((rec, i) => (
               <div
