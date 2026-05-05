@@ -1,4 +1,6 @@
-import { useRef } from 'react';
+import { useRef, useEffect } from 'react';
+import { gsap } from 'gsap';
+import SplitType from 'split-type';
 import {
   Chart as ChartJS,
   CategoryScale,
@@ -205,17 +207,38 @@ const bubbleOptions = {
 
 export default function CompetitiveAnalysis() {
   const chartsRef = useRef<HTMLDivElement>(null);
+  const eyebrowRef = useRef<HTMLParagraphElement>(null);
+  const titleRef = useRef<HTMLHeadingElement>(null);
+  const descRef = useRef<HTMLParagraphElement>(null);
+
+  useEffect(() => {
+    const elements = [eyebrowRef.current, titleRef.current, descRef.current].filter(Boolean);
+    
+    elements.forEach((el) => {
+      if (!el) return;
+      const splitText = new SplitType(el, { types: 'chars' });
+      
+      gsap.from(splitText.chars, {
+        opacity: 0,
+        y: 40,
+        rotateX: -90,
+        stagger: 0.02,
+        duration: 0.8,
+        ease: 'back.out(1.7)',
+      });
+    });
+  }, []);
 
   return (
     <section id="analysis" className="bg-white py-20 lg:py-28 print-section-padding print-page-break">
       <div className="section-container">
         {/* Header */}
         <div className="text-center max-w-[640px] mx-auto reveal">
-          <p className="eyebrow">05 — COMPETITIVE ANALYSIS</p>
-          <h2 className="mt-3 text-3xl md:text-4xl font-semibold text-black tracking-[-0.02em]">
+          <p ref={eyebrowRef} className="eyebrow">05 — COMPETITIVE ANALYSIS</p>
+          <h2 ref={titleRef} className="mt-3 text-3xl md:text-4xl font-semibold text-black tracking-[-0.02em]">
             Brand Landscape & Positioning
           </h2>
-          <p className="mt-4 text-base text-[#6b6b6b] leading-relaxed">
+          <p ref={descRef} className="mt-4 text-base text-[#6b6b6b] leading-relaxed">
             A comparative analysis of 7 key competitors across pricing, product diversity,
             sustainability claims, and brand positioning.
           </p>
